@@ -1,0 +1,62 @@
+//notes pour les animations hover,
+
+// 1. Utiliser Flexbox ou Grid
+
+// Pour assurer que les autres éléments se "poussent" naturellement quand un bouton se grossit, place tes boutons dans un conteneur flexible, comme display: flex ou display: grid. 
+// Cela permettra aux autres éléments de se réajuster harmonieusement.
+
+// 2. Appliquer un effet scale au survol
+
+// Tu peux ajouter une transformation scale dans le CSS pour augmenter légèrement la taille du bouton lorsqu’il est survolé.
+
+// Pour que les autres éléments se poussent de manière agréable, tu peux jouer avec les marges ou gap entre les boutons et tester le niveau de scale. 
+// Une augmentation de 1.2 est souvent suffisante pour un effet interactif sans déranger la mise en page.
+
+// Si tu veux ajouter un effet de “rebond” ou un retour plus fluide, tu pourrais aussi utiliser Framer Motion
+
+// import { motion } from 'framer-motion';
+
+// const Navbar = () => {
+//   return (
+//     <nav className="navbar">
+//       <ul>
+//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
+//           <a href="#about">À propos de moi</a>
+//         </motion.li>
+//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
+//           <a href="#skills">Mes connaissances</a>
+//         </motion.li>
+//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
+//           <a href="#projects">Mes projets</a>
+//         </motion.li>
+//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
+//           <a href="#contact">Me contacter</a>
+//         </motion.li>
+//       </ul>
+//     </nav>
+//   );
+// };
+
+.navbar li {
+  transition: height 0.5s ease; /* Ajout de la transition pour un effet fluide */
+  height: 40px; /* Hauteur par défaut, ajustez selon vos besoins */
+  overflow: hidden; /* Pour éviter que le contenu déborde */
+}
+
+.navbar li:hover {
+  height: 60px; /* Nouvelle hauteur au survol, ajustez selon vos besoins */
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-20deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(20deg); }
+}
+
+.wave-icon {
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
