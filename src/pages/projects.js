@@ -118,6 +118,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
+      <h2>Mes projets</h2>
       <Slider {...settings}>
         {projects.map((project) => (
           <div key={project.id}>

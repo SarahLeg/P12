@@ -111,6 +111,7 @@ body {
   height: 740px;
   background-color: $bg-color;
 }
+
 .about {
   &_title{
     font-size: 40px;
@@ -125,6 +126,32 @@ body {
 
 .skills {
   background-color: $pastely;
+  color: $purple;
+
+  .skill_card {
+    display: inline-block;
+
+    &_icon {
+      font-size: 100px;
+      margin: 15px;
+    }
+    &_description {
+      opacity: 0;
+    }
+    .js-skillcard{
+      position: relative;
+      left: 50%;
+    }
+    // .react-icon{
+
+    // }
+    // .css-icon{
+
+    // }
+    // .html-icon{
+
+    // }
+  }
 }
 
 .projects {

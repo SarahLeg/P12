@@ -37,16 +37,17 @@
 //   );
 // };
 
+//NAVBAR
 .navbar li {
   transition: height 0.5s ease; /* Ajout de la transition pour un effet fluide */
   height: 40px; /* Hauteur par défaut, ajustez selon vos besoins */
   overflow: hidden; /* Pour éviter que le contenu déborde */
+  &:hover {
+    height: 60px; /* Nouvelle hauteur au survol, ajustez selon vos besoins */
+  }
 }
 
-.navbar li:hover {
-  height: 60px; /* Nouvelle hauteur au survol, ajustez selon vos besoins */
-}
-
+//ABOUT ME
 @keyframes wave {
   0%, 100% { transform: rotate(0deg); }
   20% { transform: rotate(-20deg); }
@@ -54,9 +55,44 @@
   60% { transform: rotate(-10deg); }
   80% { transform: rotate(20deg); }
 }
-
 .wave-icon {
   display: inline-block;
   animation: wave 1.5s ease-in-out infinite;
   transform-origin: 70% 70%;
+}
+
+//SKILLS
+.skill_card {
+
+  &hover .skill_card_icon {
+    transform: scale(1.1);
+  }
+  &:hover .skill_card_description {
+    opacity: 1; /* Rendre visible */
+    transform: translateY(0); /* Réinitialiser la position */
+  }
+  &_icon {
+    transition: transform 0.3s; /* Transition pour l'icône */
+    animation: float 3s ease-in-out infinite;
+  }
+  &_description {
+    transition: opacity 0.7s ease, transform 0.5s ease; /* Transition pour l'opacité et la transformation */
+    transform: translateY(10px); /* Décale légèrement vers le bas */
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-15px); /* Légère montée */
+  }
+  50% {
+    transform: translateY(+15px); /* Montée maximale */
+  }
+  80% {
+    transform: translateY(-15px); /* Légère descente */
+  }
 }

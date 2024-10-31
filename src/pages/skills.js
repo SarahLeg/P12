@@ -1,28 +1,43 @@
 import React from 'react';
-import SkillCard from '../components/skill-card'; // Importer le composant SkillCard
+import SkillCard from '../components/skill-card';
+import { faJs, faCss3Alt, faHtml5, faReact } from '@fortawesome/free-brands-svg-icons'; // Importer les icônes
 
-const skills = [
-  { id: 1, skill: 'JavaScript', level: 'Avancé' },
-  { id: 2, skill: 'React', level: 'Intermédiaire' },
-  { id: 3, skill: 'CSS', level: 'Avancé' },
-  { id: 4, skill: 'HTML', level: 'Expert' },
-  // Ajoute d'autres compétences si nécessaire
-];
-
-const Projects = () => {
+const Skills = () => {
   return (
     <div className="skills">
       <h2>Mes Compétences</h2>
-      <div className="skills-grid">
-        <SkillCard/>
-        <SkillCard/>
-        <SkillCard/>
-        <SkillCard/>
-        <SkillCard/>
-        <SkillCard/>
+      <div>
+        <SkillCard 
+        skill="JavaScript" 
+        level="Intermédiaire" 
+        icon={faJs} 
+        description="blablabla"
+        className="js-skillcard"
+        />
+        <SkillCard
+        skill="React" 
+        level="Avancé" 
+        icon={faReact} 
+        description="blablabla"
+        className="react-skillcard"
+        />
+        <SkillCard 
+        skill="CSS3" 
+        level="Avancé" 
+        icon={faCss3Alt} 
+        description="blablabla"
+        className="css-skillcard"
+        />
+        <SkillCard 
+        skill="HTML5" 
+        level="Avancé" 
+        icon={faHtml5} 
+        description="blablabla"
+        className="html-skillcard"
+        />
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default Skills;

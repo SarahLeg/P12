@@ -4,7 +4,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <section className='contact'>
-      <h2 id='contact'>Me Contacter</h2>
+      <h2>Me Contacter</h2>
       <form action="mailto:ton-email@example.com" method="POST" encType="text/plain">
         <div>
           <label htmlFor="name">Nom</label>
