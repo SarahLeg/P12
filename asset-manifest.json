@@ -1,21 +1,28 @@
 {
   "files": {
     "main.css": "/P12/static/css/main.a3279a7a.css",
-    "main.js": "/P12/static/js/main.b947115b.js",
+    "main.js": "/P12/static/js/main.f89f2dc8.js",
     "static/js/453.50ba56e4.chunk.js": "/P12/static/js/453.50ba56e4.chunk.js",
+    "static/media/KasaDesk.mp4": "/P12/static/media/KasaDesk.41edd6fa45782d043958.mp4",
+    "static/media/SophieBDesk.mp4": "/P12/static/media/SophieBDesk.92180d5a37d1fb8abc45.mp4",
+    "static/media/OMFDesk.mp4": "/P12/static/media/OMFDesk.345c9b5d4520dc26b63b.mp4",
+    "static/media/KasaMob.mp4": "/P12/static/media/KasaMob.6eeb5c81887fdd1662da.mp4",
     "static/media/BookiDesk.mp4": "/P12/static/media/BookiDesk.43adf77ddaecb7c8d5c5.mp4",
+    "static/media/OMFMob.mp4": "/P12/static/media/OMFMob.b47d1390d2423c19a830.mp4",
+    "static/media/ABDesk.mp4": "/P12/static/media/ABDesk.31543a366db526fe846d.mp4",
     "static/media/BookiMob.mp4": "/P12/static/media/BookiMob.af4c2c0892d255ffa4e6.mp4",
+    "static/media/ABMob.mp4": "/P12/static/media/ABMob.cb99ea68a7be2851639c.mp4",
     "static/media/slick.svg": "/P12/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/P12/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/P12/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/P12/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/P12/index.html",
     "main.a3279a7a.css.map": "/P12/static/css/main.a3279a7a.css.map",
-    "main.b947115b.js.map": "/P12/static/js/main.b947115b.js.map",
+    "main.f89f2dc8.js.map": "/P12/static/js/main.f89f2dc8.js.map",
     "453.50ba56e4.chunk.js.map": "/P12/static/js/453.50ba56e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3279a7a.css",
-    "static/js/main.b947115b.js"
+    "static/js/main.f89f2dc8.js"
   ]
 }
