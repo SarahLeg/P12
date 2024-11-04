@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/P12/static/css/main.42f04567.css",
-    "main.js": "/P12/static/js/main.2d365159.js",
+    "main.css": "/P12/static/css/main.848a7930.css",
+    "main.js": "/P12/static/js/main.bb534818.js",
     "static/js/453.50ba56e4.chunk.js": "/P12/static/js/453.50ba56e4.chunk.js",
     "static/media/KasaDesk.mp4": "/P12/static/media/KasaDesk.41edd6fa45782d043958.mp4",
     "static/media/SophieBDesk.mp4": "/P12/static/media/SophieBDesk.92180d5a37d1fb8abc45.mp4",
@@ -12,20 +12,23 @@
     "static/media/ABDesk.mp4": "/P12/static/media/ABDesk.31543a366db526fe846d.mp4",
     "static/media/BookiMob.mp4": "/P12/static/media/BookiMob.af4c2c0892d255ffa4e6.mp4",
     "static/media/ABMob.mp4": "/P12/static/media/ABMob.cb99ea68a7be2851639c.mp4",
+    "static/media/icons8-github.svg": "/P12/static/media/icons8-github.b2294bccaa20da50b7d58419f07c0892.svg",
+    "static/media/icons8-canva.svg": "/P12/static/media/icons8-canva.b71324964cf0b30b6ea0abcf4b263820.svg",
+    "static/media/icons8-notion.svg": "/P12/static/media/icons8-notion.9dbdca8562ee052fee4f9e7bc42b7d5d.svg",
     "static/media/small-exotic-plant.svg": "/P12/static/media/small-exotic-plant.33efa397bd8a93b8457f0f9530209c83.svg",
     "static/media/slick.svg": "/P12/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/P12/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/P12/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/notion-icon.svg": "/P12/static/media/notion-icon.09d16c0734f6af4b6d7d94d78c23aecd.svg",
+    "static/media/icons8-figma.svg": "/P12/static/media/icons8-figma.6ae2c5799770bcfe0fb6eb3fa3df94f5.svg",
     "static/media/slick.woff": "/P12/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/canva-icon.svg": "/P12/static/media/canva-icon.20a00f53450825af0050adc0544fcca4.svg",
+    "static/media/icons8-slack.svg": "/P12/static/media/icons8-slack.b57cc4b9168913392236e1abe9207490.svg",
     "index.html": "/P12/index.html",
-    "main.42f04567.css.map": "/P12/static/css/main.42f04567.css.map",
-    "main.2d365159.js.map": "/P12/static/js/main.2d365159.js.map",
+    "main.848a7930.css.map": "/P12/static/css/main.848a7930.css.map",
+    "main.bb534818.js.map": "/P12/static/js/main.bb534818.js.map",
     "453.50ba56e4.chunk.js.map": "/P12/static/js/453.50ba56e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42f04567.css",
-    "static/js/main.2d365159.js"
+    "static/css/main.848a7930.css",
+    "static/js/main.bb534818.js"
   ]
 }
