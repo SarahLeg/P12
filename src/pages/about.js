@@ -1,4 +1,3 @@
-// src/components/About.js
 import React from 'react';
 
 const About = () => {
@@ -18,6 +17,11 @@ const About = () => {
         Mon portfolio présente les projets réalisés durant mes études, mais j’ai hâte d'y ajouter des créations personnelles pour explorer plus librement de nouvelles idées !<br/>
         <br/>
         Intrigué.e.s ? Faites un tour et n'hésitez pas à m'écrire !
+        {/* <span className='tourabout'>
+          {['F', 'a', 'i', 't', 'e', 's', '  ', 'u', 'n', '  ', 't', 'o', 'u', 'r'].map((letter, index) => (
+            <span key={index}>{letter}</span>
+          ))}
+        </span> */}
       </p>
     </section>
   );

@@ -1,8 +1,9 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'; // Import des composants de React Router
+import { HashRouter as Router, Routes, Route} from 'react-router-dom'; // Import des composants de React Router
 import './styles/main.scss';
 import './styles/animations.scss';
+import './styles/mediaqueries.scss';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Layout from './components/layout';

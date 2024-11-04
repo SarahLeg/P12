@@ -1,51 +1,13 @@
-//notes pour les animations hover,
-
-// 1. Utiliser Flexbox ou Grid
-
-// Pour assurer que les autres éléments se "poussent" naturellement quand un bouton se grossit, place tes boutons dans un conteneur flexible, comme display: flex ou display: grid. 
-// Cela permettra aux autres éléments de se réajuster harmonieusement.
-
-// 2. Appliquer un effet scale au survol
-
-// Tu peux ajouter une transformation scale dans le CSS pour augmenter légèrement la taille du bouton lorsqu’il est survolé.
-
-// Pour que les autres éléments se poussent de manière agréable, tu peux jouer avec les marges ou gap entre les boutons et tester le niveau de scale. 
-// Une augmentation de 1.2 est souvent suffisante pour un effet interactif sans déranger la mise en page.
-
-// Si tu veux ajouter un effet de “rebond” ou un retour plus fluide, tu pourrais aussi utiliser Framer Motion
-
-// import { motion } from 'framer-motion';
-
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <ul>
-//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
-//           <a href="#about">À propos de moi</a>
-//         </motion.li>
-//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
-//           <a href="#skills">Mes connaissances</a>
-//         </motion.li>
-//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
-//           <a href="#projects">Mes projets</a>
-//         </motion.li>
-//         <motion.li whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
-//           <a href="#contact">Me contacter</a>
-//         </motion.li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
 //NAVBAR
 .navbar li {
-  transition: height 0.5s ease; /* Ajout de la transition pour un effet fluide */
-  height: 40px; /* Hauteur par défaut, ajustez selon vos besoins */
-  overflow: hidden; /* Pour éviter que le contenu déborde */
+  transition: height 0.3s ease-out;
+  overflow: hidden;
+  height: 2vh;
   &:hover {
-    height: 60px; /* Nouvelle hauteur au survol, ajustez selon vos besoins */
+    height: 4vh;
   }
 }
+
 
 //ABOUT ME
 @keyframes wave {
@@ -61,6 +23,8 @@
   transform-origin: 70% 70%;
 }
 
+
+
 //SKILLS
 .skill_card {
 
@@ -68,16 +32,15 @@
     transform: scale(1.1);
   }
   &:hover .skill_card_description {
-    opacity: 1; /* Rendre visible */
-    transform: translateY(0); /* Réinitialiser la position */
+    opacity: 1;
+    transform: translateY(0);
   }
   &_icon {
-    transition: transform 0.3s; /* Transition pour l'icône */
-    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s;
   }
   &_description {
-    transition: opacity 0.7s ease, transform 0.5s ease; /* Transition pour l'opacité et la transformation */
-    transform: translateY(10px); /* Décale légèrement vers le bas */
+    transition: opacity 0.7s ease, transform 0.5s ease;
+    transform: translateY(10px);
     transform: translateX(-50%);
   }
 }
@@ -96,3 +59,101 @@
     transform: translateY(-15px); /* Légère descente */
   }
 }
+
+.skills_skills svg{
+  animation: float 3s ease-in-out infinite;
+}
+
+.skills_tools {
+  svg {
+    transition: transform 0.3s ease;
+  }
+  svg:hover {
+    animation: shake 0.5s ease;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
+//CONTACT
+.envelope {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+.mouse {
+  animation: moveMouse 5s ease-in-out infinite;
+}
+
+@keyframes moveMouse {
+  0% {
+    transform: translateX(50) translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: translateX(50px) translateY(0) rotate(-5deg);
+  }
+}
+
+
+
+//Animation lettres années 90 dans about
+// .tourabout{
+//   margin: 5px;
+// }
+
+// .tourabout span {
+//   margin: 1px;
+//   display: inline-block; /* Permet l'animation sur chaque lettre */
+//   animation: lift 1.5s ease-in-out infinite; /* Animation de soulèvement */
+// }
+
+// @keyframes lift {
+//   0%, 100% {
+//     transform: translateY(0); /* Position de départ et d'arrivée */
+//   }
+//   50% {
+//     transform: translateY(-5px); /* Position intermédiaire pour le soulèvement */
+//   }
+// }
+
+// /* Animation pour chaque lettre avec un léger décalage */
+// .tourabout span:nth-child(1) { animation-delay: 0s; }
+// .tourabout span:nth-child(2) { animation-delay: 0.1s; }
+// .tourabout span:nth-child(3) { animation-delay: 0.2s; }
+// .tourabout span:nth-child(4) { animation-delay: 0.3s; }
+// .tourabout span:nth-child(5) { animation-delay: 0.4s; }
+// .tourabout span:nth-child(6) { animation-delay: 0.5s; }
+// .tourabout span:nth-child(7) { animation-delay: 0.6s; }
+// .tourabout span:nth-child(8) { animation-delay: 0.7s; }
+// .tourabout span:nth-child(9) { animation-delay: 0.8s; }
+// .tourabout span:nth-child(10) { animation-delay: 0.9s; }
+// .tourabout span:nth-child(11) { animation-delay: 1s; }
+// .tourabout span:nth-child(12) { animation-delay: 1.1s; }
+// .tourabout span:nth-child(13) { animation-delay: 1.2s; }

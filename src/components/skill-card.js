@@ -4,11 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SkillCard = ({ skill, level, icon, description }) => {
   return (
     <div className="skill_card">
-      <FontAwesomeIcon icon={icon} className="skill_card_icon" />
+      {/* Affiche l'icône en utilisant FontAwesome ou une balise <img> pour les SVG personnalisés */}
+      {typeof icon === 'object' ? (
+        <FontAwesomeIcon icon={icon} className="skill_card_icon" />
+      ) : (
+        <img src={icon} alt={`${skill} icon`} className="skill_card_icon" />
+      )}
+      
       <div className="skill_card_description">
         <p>{skill}</p>
-        <p>{level}</p>
-        <p>{description}</p>
+        {level && <p>{level}</p>}
+        {description && <p>{description}</p>}
       </div>
     </div>
   );

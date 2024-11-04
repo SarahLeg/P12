@@ -1,0 +1,188 @@
+
+
+
+
+
+
+
+
+
+
+
+/* Des special width pour les animations contact*/
+@media (min-width: 1024px) {
+    .contact {
+      
+        &_message{
+          font-size: 25px;
+        }
+      
+        &_icons{
+      
+          .mouse{
+            font-size: 45px;
+            transform: rotate(-15deg);
+            top: 80%;
+            left: 65%;
+          }
+      
+          .keyboard{
+            font-size: 100px;
+            top: 76%;
+            left: 18%;
+          }
+          
+          .desktop {
+            font-size: 250px;
+            top: 40%;
+            right: 10%;
+            z-index: 1;
+          }
+          
+          .envelope {
+            font-size: 25px;
+            top: 55%;
+            right: 50%;
+          }
+      
+          .plant{
+            width: 75px;
+            right: 70%;
+            top: 18%;
+            z-index: 0;
+          }
+        }
+    }
+}
+@media (min-width: 1280px) {
+    .contact {
+      
+        &_message{
+          font-size: 25px;
+        }
+      
+        &_icons{
+      
+          .mouse{
+            font-size: 55px;
+            transform: rotate(-15deg);
+            top: 80%;
+            left: 55%;
+          }
+      
+          .keyboard{
+            font-size: 120px;
+            top: 76%;
+            left: 14%;
+          }
+          
+          .desktop {
+            font-size: 250px;
+            top: 40%;
+            right: 10%;
+            z-index: 1;
+          }
+          
+          .envelope {
+            font-size: 25px;
+            top: 55%;
+            right: 50%;
+          }
+      
+          .plant{
+            width: 85px;
+            right: 60%;
+            top: 18%;
+            z-index: 0;
+          }
+        }
+    }
+}
+@media (min-width: 1600px) {
+    .contact {
+      
+        &_message{
+          font-size: 25px;
+        }
+      
+        &_icons{
+      
+          .mouse{
+            font-size: 55px;
+            transform: rotate(-15deg);
+            top: 80%;
+            left: 65%;
+          }
+      
+          .keyboard{
+            font-size: 120px;
+            top: 76%;
+            left: 30%;
+          }
+          
+          .desktop {
+            font-size: 250px;
+            top: 40%;
+            left: 10%;
+            z-index: 1;
+          }
+          
+          .envelope {
+            font-size: 25px;
+            top: 55%;
+            right: 20%;
+          }
+      
+          .plant{
+            width: 95px;
+            right: 40%;
+            top: 17%;
+            z-index: 0;
+          }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    .contact {
+      
+        &_message{
+          font-size: 25px;
+        }
+      
+        &_icons{
+      
+          .mouse{
+            font-size: 55px;
+            transform: rotate(-15deg);
+            top: 80%;
+            left: 65%;
+          }
+      
+          .keyboard{
+            font-size: 120px;
+            top: 76%;
+            left: 30%;
+          }
+          
+          .desktop {
+            font-size: 250px;
+            top: 40%;
+            left: 10%;
+            z-index: 1;
+          }
+          
+          .envelope {
+            font-size: 25px;
+            top: 55%;
+            right: 10%;
+          }
+      
+          .plant{
+            width: 95px;
+            right: 30%;
+            top: 17%;
+            z-index: 0;
+          }
+        }
+    }
+}

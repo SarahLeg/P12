@@ -13,7 +13,7 @@ $forest-color: #4a6d44;
 $background-color: #7e9275;
 $pastely: #fee6d2;
 $yellow: #c97353;
-$pastelb: #e6ecff;
+$pastelb: #dfe7ff;
 $pastelg: #edf8d3;
 $pastelp: #f2e6ff;
 $purple: #736384;
@@ -36,7 +36,12 @@ body {
 
     h2{
       visibility: hidden;
+      position: absolute;
     }
+  }
+
+  img {
+    max-width: 100%; height: auto;
   }
 
   // .bg-image{
@@ -52,25 +57,30 @@ body {
   justify-content: space-between;
 
   h1{
-    font-size: 80px;
+    font-size: 3.5vw;
     font-family: "Great Vibes", cursive;
     font-weight: normal;
     color: $forest-color;
+    text-align: center;
+    padding-top: 20px;
   }
 }
 
 .navbar {
-  width: 50%;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  position: relative;
+  right: 5%;
+  
   &_content{
+    padding:0;
   
     a, li{
+      width: 10vw;
       margin: 0;
       border-radius: 15px 15px 0px 0px;
       padding: 5px;
-      font-size: 18px;
+      font-size: 1vw;
       font-weight: bold;
       display: inline-block;
     }
@@ -128,20 +138,31 @@ body {
   background-color: $pastely;
   color: $purple;
 
+  &_skills{
+    display: flex;
+    justify-content: row;
+    svg{
+      font-size: 6vw;
+    }
+  }
+
+  &_tools{
+    display: flex;
+    justify-content: row;
+  }
+
   .skill_card {
-    display: inline-block;
+    margin: 2vw;
 
     &_icon {
-      font-size: 100px;
       margin: 15px;
     }
     &_description {
       opacity: 0;
     }
-    .js-skillcard{
-      position: relative;
-      left: 50%;
-    }
+    // .js-skillcard{
+    //   left: 50%;
+    // }
     // .react-icon{
 
     // }
@@ -158,58 +179,40 @@ body {
   background-color: $pastelb;
   color: $yellow;
   font-weight: bold;
-
-  // &_container{
-
-  // }
 }
-
 .project_card {
   display: flex;
-  padding: 20px 20px 20px;
-  // height: 700px;
+  width: 100%;
+  height: 600px;
+  display: flex;
 
-  // &_imgs{
-  //   display: flex;
-  //   width: 70%; // La largeur du conteneur
-  //   height: 400px; // La hauteur fixe du conteneur
-  //   margin: 25px;
+  &.right {
+    flex-direction: row-reverse;
+  }
 
-  //   video {
-  //     overflow: auto;
-  //     width: 50%;
-  //     border: solid 1px $purple;
-  //     border-radius: 5px;
-  //   }
-
-  //   &_desk{
-  //     height: 150px;
-  //     width: 250px;
-  //   }
-
-  .project_card_imgs {
+  .project_card_vids {
     display: flex;
-  }
-  
-  .project_card_content_desk,
-  .project_card_content_mob {
-    width: 100%;
-    display: block;
-    border-radius: 5px;
-    margin: 10px;
-  }
-
-  .project_card_content_desk{
-    width: 60%;
-  }
-
-  .project_card_content_mob{
-    width: 20%;
-  }
-  
-  &_content {
-    width: 30%;
     padding: 50px;
+    width: 90%;
+  
+    &.right {
+      flex-direction: row-reverse;
+    }
+       
+    &_deskvid{
+      width: 80%;
+    }
+
+    &_mobvid{
+      width: 20%;
+      margin: 80px 5px 0px;
+      border-radius: 15px;
+    }
+  }
+
+  &_description {
+    width: 30%;
+    padding: 15px;
     align-items: center;
     justify-content: center;
   }
@@ -218,4 +221,73 @@ body {
 .contact {
   background-color: $pastelp;
   color: $purple;
+  display: flex;
+
+  &_message{
+    font-size: 25px;
+  }
+
+  &_icons{
+    position: relative;
+    width: 50%;
+    display: flex;
+
+    .mouse, .keyboard, .desktop, .envelope, .plant{
+      position: relative;
+    }
+
+    .mouse{
+      font-size: 45px;
+      transform: rotate(-15deg);
+      top: 75%;
+      left: 75%;
+    }
+
+    .keyboard{
+      font-size: 100px;
+      top: 73%;
+      left: 35%;
+    }
+    
+    .desktop {
+      font-size: 250px;
+      top: 40%;
+      right: 20%;
+      z-index: 1;
+    }
+    
+    .envelope {
+      color: $yellow;
+      font-size: 35px;
+      top: 54%;
+      right: 50%;
+    }
+
+    .plant{
+      width: 75px;
+      right: 68%;
+      top: 60%;
+      z-index: 0;
+    }
+  }
+
+  form{
+    width: 50%;
+    font-size: 1.5vw;
+    align-content: center;
+    input, textarea{
+      border: none;
+      border-radius: 15px;
+      margin: 3vw;
+      font-size: 1vw;
+      padding: 1vh;
+    }
+    // input{
+    //   padding: 1vh;
+    // }
+    textarea{
+      width: 30vw;
+      height: 20vh;
+    }
+  }
 }
