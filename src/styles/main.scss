@@ -14,6 +14,7 @@ $background-color: #7e9275;
 $pastely: #fee6d2;
 $yellow: #c97353;
 $pastelb: #dfe7ff;
+$blue: rgb(61, 97, 144);
 $pastelg: #edf8d3;
 $pastelp: #f2e6ff;
 $purple: #736384;
@@ -91,12 +92,12 @@ body {
       }
  
       &_skills{
-        background-color: $pastely;
-        color: $purple;
+        background-color: $pastelb;
+        color: $blue;
       }
 
       &_projects{
-        background-color: $pastelb;
+        background-color: $pastely;
         color: $yellow;
       }
 
@@ -135,12 +136,12 @@ body {
 }
 
 .skills {
-  background-color: $pastely;
-  color: $purple;
+  background-color: $pastelb;
+  color: $blue;
 
   &_skills{
     display: flex;
-    justify-content: row;
+    padding: 8vw 5vw 3vw 5vw;
     svg{
       font-size: 6vw;
     }
@@ -148,35 +149,32 @@ body {
 
   &_tools{
     display: flex;
-    justify-content: row;
+    justify-content: flex-end;
+    margin: 4vw 2vw 0vw 0vw;
+    svg{
+      font-size: 2vw;
+      
+    }
+    p{
+      font-size: 1.5vw;
+    }
   }
 
   .skill_card {
-    margin: 2vw;
 
-    &_icon {
-      margin: 15px;
-    }
+    // &_icon {
+    //   margin: 25px;
+    // }
     &_description {
       opacity: 0;
+      font-weight: bold;
+      padding: 10px;
     }
-    // .js-skillcard{
-    //   left: 50%;
-    // }
-    // .react-icon{
-
-    // }
-    // .css-icon{
-
-    // }
-    // .html-icon{
-
-    // }
   }
 }
 
 .projects {
-  background-color: $pastelb;
+  background-color: $pastely;
   color: $yellow;
   font-weight: bold;
 }

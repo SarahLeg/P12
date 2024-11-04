@@ -1,8 +1,11 @@
 import React from 'react';
 import SkillCard from '../components/skill-card';
-import { faJs, faCss3Alt, faHtml5, faReact, faFigma, faSlack, faGithub } from '@fortawesome/free-brands-svg-icons'; // Importer les icônes
-import NotionIcon from '../assets/icons/notion-icon.svg';
-import CanvaIcon from '../assets/icons/canva-icon.svg';
+import { faJs, faCss3Alt, faHtml5, faReact} from '@fortawesome/free-brands-svg-icons'; // Importer les icônes
+import NotionIcon from '../assets/icons/icons8-notion.svg';
+import FigmaIcon from '../assets/icons/icons8-figma.svg';
+import SlackIcon from '../assets/icons/icons8-slack.svg';
+import GithubIcon from '../assets/icons/icons8-github.svg';
+import CanvaIcon from '../assets/icons/icons8-canva.svg';
 
 const Skills = () => {
   return (
@@ -45,20 +48,20 @@ const Skills = () => {
           
         </div>
         <div className="skills_tools">
-          <div>
-            <SkillCard 
-            skill="Figma" 
-            icon={faFigma} 
-            />
+
+            <p>
+              Mais aussi →
+            </p>
 
             <SkillCard 
-            skill="Slack" 
-            icon={faSlack} 
+            skill="Figma" 
+            icon={FigmaIcon} 
             />
+
 
             <SkillCard 
             skill="Github"
-            icon={faGithub} 
+            icon={GithubIcon} 
             />
 
             <SkillCard
@@ -70,7 +73,11 @@ const Skills = () => {
             skill="Canva" 
             icon={CanvaIcon}
             />
-          </div>
+
+            <SkillCard 
+            skill="Slack" 
+            icon={SlackIcon} 
+            />
         </div>
       </div>
     </div>
