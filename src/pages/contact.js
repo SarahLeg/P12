@@ -5,10 +5,23 @@ import plantIcon from '../assets/icons/small-exotic-plant.svg';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const clearForm = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+
+    setTimeout(() => {
+      clearForm();
+    }, 500);
   };
 
   return (
@@ -25,9 +38,11 @@ const Contact = () => {
           <label htmlFor="name">Nom</label>
           <input 
             type="text" 
+            value={name}
             id="name" 
             name="nom"
             placeholder="Prénom, Nom - enchantée!" 
+            onChange={(e) => setName(e.target.value)}
             required 
           />
         </div>
@@ -36,19 +51,23 @@ const Contact = () => {
           <label htmlFor="email">Email</label>
           <input 
             type="email" 
+            value={email}
             id="email"
             name='email'
             placeholder="jaitoutcompris@free.fr"
+            onChange={(e) => setEmail(e.target.value)}
             required 
           />
         </div>
 
         <div>
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message"></label>
           <textarea 
             id="message"
+            value={message}
             name='message'
-            placeholder="Wouah, ce portfolio est super !" 
+            placeholder="Ce portfolio est chouette !"
+            onChange={(e) => setMessage(e.target.value)}
             required 
           ></textarea>
         </div>
@@ -67,7 +86,7 @@ const Contact = () => {
 
       {submitted && (
         <p className="contact_message">
-          Merci pour votre message, je vous répondrai au plus vite
+          Merci pour votre message, je vous répondrai au plus vite!
         </p>
       )}
       

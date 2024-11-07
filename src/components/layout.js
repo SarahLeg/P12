@@ -15,11 +15,9 @@ const Layout = ({ children }) => {
             </main>
 
             <footer className='footer'>
-                <p>&copy; 2024 Mon Portfolio</p>
                 <ul>
-                    <li><a href="https://linkedin.com/in/votreprofil">LinkedIn</a></li>
-                    <li><a href="https://github.com/votreprofil">GitHub</a></li>
-                    <li><a href="https://github.com/votreprofil">Télécharger mon CV</a></li>
+                    <li><a href="www.linkedin.com/in/sarah-legrand06">Lien vers mon LinkedIn</a></li>
+                    <li><a href="https://github.com/SarahLeg">Lien vers ma page Github</a></li>
                 </ul>
             </footer>
         </div>

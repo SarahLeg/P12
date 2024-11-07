@@ -29,7 +29,7 @@ const Projects = () => {
       id: 0,
       title: 'Booki - Agence de Voyage',
       description: 
-      "Booki est un projet qui m'a permis d'explorer les fondements du développement web tout en travaillant sur un produit ayant une réelle utilité pour les utilisateurs. Ce projet m'a permis de renforcer mes compétences en HTML, CSS et JavaScript, tout en découvrant l'importance de l'accessibilité et du web sémantique.",
+      "Booki est un projet qui m'a permis d'explorer les fondements du développement web tout en travaillant sur un produit ayant une réelle utilité pour les utilisateur-ices. Ce projet m'a permis de renforcer mes compétences en HTML, CSS et JavaScript, tout en découvrant l'importance de l'accessibilité et du web sémantique.",
       videoDesktop: BookiDesk,
       videoMobile: BookiMob,
       githubLink: 'https://github.com/ton-projet-1',
@@ -37,7 +37,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'OhMyFood - Site en mobile first',
-      description: "OhMyFood est un projet qui m'a permis de me plonger dans le concept du mobile first, en créant un site responsive destiné aux amateurs de gastronomie. J'ai été ravi de relever le défi de concevoir un site qui s'adapte parfaitement aux appareils mobiles, tout en conservant une esthétique attrayante.",
+      description: "OhMyFood est un projet qui m'a permis de me plonger dans le concept du mobile first, en créant un site responsive destiné aux amateur-ices de gastronomie. J'ai été ravie de relever le défi de concevoir un site qui s'adapte parfaitement aux appareils mobiles, tout en conservant une esthétique attrayante.",
       videoDesktop: OMFDesk,
       videoMobile: OMFMob,
       githubLink: 'https://github.com/ton-projet-2',
@@ -46,7 +46,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'Kasa - Locations Immobilières',
-      description: "Kasa est un projet axé sur la location immobilière, conçu pour répondre aux besoins des voyageurs modernes à la recherche d'un hébergement de qualité. J'ai particulièrement apprécié l'approche centrée sur l'utilisateur, où chaque élément de l'interface visait à faciliter la recherche de propriétés. Créer une expérience fluide et agréable pour les utilisateurs a été un véritable défi, mais aussi une source de motivation.",
+      description: "Kasa est un projet axé sur la location immobilière, conçu pour répondre aux besoins des voyageur-euses modernes à la recherche d'un hébergement de qualité. J'ai particulièrement apprécié l'approche centrée sur l'utilisateur-ice, où chaque élément de l'interface visait à faciliter la recherche de propriétés. Créer une expérience fluide et agréable a été un véritable défi, mais aussi une source de motivation.",
       videoDesktop: KasaDesk,
       videoMobile: KasaMob,
       githubLink: 'https://github.com/ton-projet-2',
@@ -63,7 +63,7 @@ const Projects = () => {
     {
       id: 4,
       title: 'Sophie Bluel, Architecte - Son Portfolio ',
-      description: "Le projet Sophie Bluel est un portfolio dynamique conçu pour mettre en avant le travail d'une architecte talentueuse. Un des aspects clés de ce projet a été d'ajouter une authentification pour l'administrateur qui permettait d'accéder à une interface différente. J'ai mis en place des fonctionnalités permettant d'ajouter et de supprimer des photos directement depuis cette interface via une modale, offrant ainsi une gestion flexible et efficace du contenu.",
+      description: "Le projet Sophie Bluel est un portfolio dynamique conçu pour mettre en avant le travail d'une architecte talentueuse. Un des aspects clés de ce projet a été d'ajouter une authentification pour l'administratrice qui permettait d'accéder à une interface différente. J'ai mis en place des fonctionnalités permettant d'ajouter et de supprimer des photos directement depuis cette interface via une modale, offrant ainsi une gestion flexible et efficace du contenu.",
       videoDesktop: SophieBDesk,
       videoMobile: null,
       githubLink: 'https://github.com/ton-projet-2',

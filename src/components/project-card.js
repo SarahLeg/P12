@@ -50,8 +50,8 @@ const ProjectCard = ({ project }) => {
         )}  
       </div>
       <div className='project_card_description'>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <p className='project_card_description_title'>{title}</p>
+        <p className='project_card_description_content'>{description}</p>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
       </div>
     </div>

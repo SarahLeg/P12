@@ -43,8 +43,7 @@
   }
 
   &_description {
-    transition: opacity 0.7s ease, transform 0.5s ease;
-    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
     transform: translateY(10px);
     transform: translateX(-50%) translateY(10px);
   }
@@ -126,6 +125,18 @@
   }
 }
 
+.contact_message {
+  animation: fadeInOut linear; /* Animation d’apparition et disparition */
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
 
 
 //Animation lettres années 90 dans about
