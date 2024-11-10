@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/P12/static/css/main.160646b2.css",
+    "main.css": "/P12/static/css/main.cd4a10e4.css",
     "main.js": "/P12/static/js/main.c603deb1.js",
     "static/js/453.50ba56e4.chunk.js": "/P12/static/js/453.50ba56e4.chunk.js",
     "static/media/KasaDesk.mp4": "/P12/static/media/KasaDesk.41edd6fa45782d043958.mp4",
@@ -23,12 +23,12 @@
     "static/media/slick.woff": "/P12/static/media/slick.295183786cd8a1389865.woff",
     "static/media/icons8-slack.svg": "/P12/static/media/icons8-slack.b57cc4b9168913392236e1abe9207490.svg",
     "index.html": "/P12/index.html",
-    "main.160646b2.css.map": "/P12/static/css/main.160646b2.css.map",
+    "main.cd4a10e4.css.map": "/P12/static/css/main.cd4a10e4.css.map",
     "main.c603deb1.js.map": "/P12/static/js/main.c603deb1.js.map",
     "453.50ba56e4.chunk.js.map": "/P12/static/js/453.50ba56e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.160646b2.css",
+    "static/css/main.cd4a10e4.css",
     "static/js/main.c603deb1.js"
   ]
 }
