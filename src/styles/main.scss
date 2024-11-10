@@ -13,7 +13,7 @@ $bg-color: #fffef4;
 $forest-color: #4a6d44;
 $background-color: #7e9275;
 $pastely: #fee6d2;
-$yellow: #c97353;
+$yellow: #cf5428;
 $pastelb: #dfe7ff;
 $blue: rgb(61, 97, 144);
 $pastelg: #edf8d3;
@@ -64,7 +64,7 @@ body {
     font-weight: normal;
     color: $forest-color;
     text-align: center;
-    padding-top: 2vh;
+    padding-top: 1vh;
   }
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .header, .footer {
-  height: 80px;
+  height: 9vh;
   padding: 0;
 }
 
@@ -119,17 +119,18 @@ body {
 }
 
 .about, .contact, .projects, .skills {
+  overflow: hidden;
   border-radius: 50px;
   height: 80vh;
 }
 
 .about {
   &_title{
-    font-size: 40px;
+    font-size: 3vw;
   }
   background-color: $pastelg;
   color: $forest-color;
-  font-size: 25px;
+  font-size: 1.5vw;
   p{
     padding: 7vh 10vw 0vw;
   }
@@ -275,7 +276,7 @@ body {
     .envelope {
       color: $yellow;
       font-size: 35px;
-      top: 54%;
+      top: 44%;
       right: 50%;
     }
 
@@ -297,6 +298,13 @@ body {
       margin: 1vw;
       font-size: 1vw;
       padding: 1vh;
+    }
+    button{
+      background-color: white;
+      &:hover{
+        background-color: $purple;
+        color: white;
+      }
     }
     textarea{
       width: 30vw;

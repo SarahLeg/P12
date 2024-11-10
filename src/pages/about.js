@@ -8,7 +8,7 @@ const About = () => {
       </div>
       <p className='about_title'> Bienvenue ! <span className="wave-icon">👋</span> </p>
       <p>
-        Je suis Sarah, développeuse front-end passionnée par les expériences interactives et les designs visuels originaux. <br/>
+        Je suis Sarah, développeuse front-end passionnée. <br/>
         <br/>
         Depuis petite, les écrans – ceux des ordinateurs en particulier – m’ont toujours fascinée. 
         Cette passion est restée intacte au fil des années, et j’ai souvent pris plaisir à "bidouiller" pour redonner vie à un vieux PC ou explorer en profondeur des logiciels.<br/>

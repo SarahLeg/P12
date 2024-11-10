@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <div>
       <div className="skills">
-      <h2>Mes Compétences</h2>
+      <h2>Mes Skills</h2>
         <div className='skills_skills'>
 
           <SkillCard 
